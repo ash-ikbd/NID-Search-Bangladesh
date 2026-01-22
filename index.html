@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NID Search Bangladesh - The official secure and modern voter information system. Search voter details, verify identities, and manage electoral data with ease." />
+    <meta name="keywords" content="NID BD, Voter Search Bangladesh, Bangladesh Election Commission, NID Verification, Smart NID" />
+    <meta property="og:title" content="NID Search Bangladesh | Official Voter Portal" />
+    <meta property="og:description" content="Access the national voter database securely. Search by NID, name, or serial number." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://nidw.gov.bd/assets/img/logo/ec_logo.png" />
+    
+    <title>NID Search Bangladesh | Official Voter Database</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              bengali: ['Hind Siliguri', 'sans-serif'],
+            },
+            colors: {
+              bd: {
+                green: '#006a4e',
+                red: '#f42a41',
+                dark: '#0f172a',
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'float-delayed': 'float 6s ease-in-out 3s infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .font-bn {
+        font-family: 'Hind Siliguri', sans-serif;
+      }
+      /* 3D Effects */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+      .card-3d-hover {
+        transition: transform 0.5s ease;
+      }
+      .card-3d-hover:hover {
+        transform: rotateX(5deg) rotateY(5deg) scale(1.02);
+      }
+      
+      /* Glassmorphism */
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      
+      .mesh-gradient {
+        background-color: #f8fafc;
+        background-image: radial-gradient(at 0% 0%, hsla(153,96%,37%,0.1) 0px, transparent 50%),
+                          radial-gradient(at 100% 0%, hsla(355,87%,56%,0.05) 0px, transparent 50%),
+                          radial-gradient(at 100% 100%, hsla(153,96%,37%,0.1) 0px, transparent 50%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
